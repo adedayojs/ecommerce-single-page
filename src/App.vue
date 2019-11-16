@@ -1,13 +1,15 @@
 <template>
-  <div></div>
+<Header/>
 </template>
 
 <script>
 import 'bootstrap/dist/css/bootstrap.min.css'
+import Header from './components/Header'
 
 export default {
   name: 'app',
   components: {
+    Header
   }
 }
 </script>
