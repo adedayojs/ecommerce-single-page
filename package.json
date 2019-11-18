@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "prestart": "yarn build",
+    "prestart": "build",
     "start": "node server",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
