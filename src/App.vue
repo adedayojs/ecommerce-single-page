@@ -2,6 +2,7 @@
   <section>
     <Header />
     <Banner />
+    <Body />
   </section>
 </template>
 
@@ -9,12 +10,14 @@
   import 'bootstrap/dist/css/bootstrap.min.css';
   import Header from './components/Header';
   import Banner from './components/Banner';
+  import Body from './components/Body';
 
   export default {
     name: 'app',
     components: {
       Header,
-      Banner
+      Banner,
+      Body
     }
   };
 </script>
