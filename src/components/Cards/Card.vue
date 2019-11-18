@@ -1,7 +1,7 @@
 <template>
   <div class="card-cont animate-zoom">
     <img :src="image" width="90%" />
-    <div>
+    <div class="content">
       <h5 class="m-1">Name: {{ name }}</h5>
       <div class="row">
         <span class="col"><strong>Amount:</strong> {{ amount }}</span>
@@ -30,6 +30,14 @@
   img {
     margin-left: 1em;
   }
+  .content {
+    background: rgba(223, 224, 217, 0.39);
+    margin: 1em;
+    padding: 0.5em;
+  }
+  .card-cont:hover {
+    opacity: 0.7;
+  }
   .card-cont {
     margin: auto;
   }
@@ -44,11 +52,5 @@
     to {
       transform: scale(1);
     }
-  }
-  .w3-animate-input {
-    transition: width 0.4s ease-in-out;
-  }
-  .w3-animate-input:focus {
-    width: 100% !important;
   }
 </style>

@@ -7,7 +7,7 @@
       <input type="text" v-on:keyup="changeHandler" v-model="filter" />
     </div>
 
-      <h1 class="text-center">Phones</h1>
+    <h1 class="text-center">Phones</h1>
     <!-- Phone Product display section -->
     <div class="row justify-content-center m-4">
       <br />
@@ -22,9 +22,8 @@
         :rating="card.rating"
       />
     </div>
-      
-      
-      <h1 class="text-center">Bags</h1>
+
+    <h1 class="text-center">Bags</h1>
     <!-- Phone Product display section -->
     <div class="row justify-content-center m-4">
       <br />
@@ -160,5 +159,14 @@
 <style scoped>
   span {
     margin: auto 2em;
+  }
+  .card {
+    box-shadow: 0 0 1em rgb(215, 224, 226);
+    border: none;
+    transition: ease-in-out 0.5s;
+  }
+  .card:hover {
+    transform: scale(1.1);
+    transition: ease-in-out 0.5s;
   }
 </style>
